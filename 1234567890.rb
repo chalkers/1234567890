@@ -1,5 +1,5 @@
 %w(rubygems sinatra).each {|l| require l}
-load "./lib/haml-2.0.7/lib/haml.rb"
+load "./lib/haml/lib/haml.rb"
 
 configure :production do
 end
