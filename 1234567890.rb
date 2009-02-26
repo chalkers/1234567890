@@ -1,4 +1,5 @@
 %w(rubygems sinatra).each {|l| require l}
+Dir["lib/**/*.rb"].each {|file| load file}
 
 configure :production do
 end
