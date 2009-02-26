@@ -1,3 +1,5 @@
+%w(rubygems sinatra).each {|l| require l}
+
 get "/" do
  @magic = 1234567890
  haml :index, :layout => !request.xhr? ? :layout : false
