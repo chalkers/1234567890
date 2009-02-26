@@ -1,5 +1,8 @@
 %w(rubygems sinatra).each {|l| require l}
 
+configure :production do
+end
+
 get "/" do
  @magic = 1234567890
  haml :index, :layout => !request.xhr? ? :layout : false
